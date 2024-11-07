@@ -1,0 +1,18 @@
+#Algorithme CalculerNombreBonbons
+
+    Entrée : 
+        réel argent  // Montant d'argent disponible
+        réel prix    // Prix unitaire du bonbon
+    Sortie :
+        entier nombreDeBonbons  // Nombre maximum de bonbons qu'on peut acheter
+
+    Début
+        nombreDeBonbons ← 0  // Initialisation du compteur de bonbons
+
+        TantQue (argent >= prix) Faire
+            argent ← argent - prix  // Soustraire le prix du bonbon de l'argent disponible
+            nombreDeBonbons ← nombreDeBonbons + 1  // Incrémenter le nombre de bonbons achetés
+        FinTantQue
+
+        Retourner nombreDeBonbons  // Retourner le nombre maximum de bonbons achetés
+    Fin
